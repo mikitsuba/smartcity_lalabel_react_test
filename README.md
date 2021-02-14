@@ -1,3 +1,21 @@
+# やること
+
+以下をターミナルで実施
+①git clone [this repository]
+②cd [this repository]
+③make create-project
+
+上記で localhost:80 でアクセスして
+`Example React Component` と表示されれば成功
+
+エラーになる場合 docker for mac（またはそれと同等のソフト）が入っていなかったり、web server の docker に入って npm install する必要があるかも。
+後者の場合はターミナルで以下コマンド実施
+①make app
+②cd backend
+③npm install && npm run dev
+
+以下元からあった readme
+
 # docker-laravel 🐳
 
 ![License](https://img.shields.io/github/license/ucan-lab/docker-laravel?color=f05340)

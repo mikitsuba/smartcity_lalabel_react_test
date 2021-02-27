@@ -20,3 +20,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//
+// epsonプリンター
+//
+// 印刷実行
+Route::post('/print', 'App\Http\Controllers\PrintController@execute_print');

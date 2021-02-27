@@ -524,6 +524,13 @@
         </div>
     </div> -->
     <div id="app"></div>
+    <form action="{{ url('/print') }}" method="POST">
+        @csrf
+        <input type="hidden" name="client_id" value="014be42227994ff2b0eec9704ddcecf6">
+        <input type="hidden" name="secret" value="9Iono6jCXT3BD70HNMz0IZmE4BiQH4R55s9x9wowdYKK9juC9ld5h63lVJCswioD">
+        <input type="hidden" name="device" value="dmc59096ipvpy5@print.epsonconnect.com">
+        <button type='submit'>TRY</button>
+    </form>
 </body>
 
 </html>
